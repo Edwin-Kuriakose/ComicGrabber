@@ -77,7 +77,7 @@ def main():
 		endStr = input("End date (MM/DD/YYYY) :  ")
 	end = dt.datetime.strptime(endStr, '%m/%d/%Y')
 
-	start_time = time.time()
+	#start_time = time.time()
 
 	day = dt.timedelta(days=1)
 
@@ -88,7 +88,7 @@ def main():
 		downloader(iter, source, location)
 		iter += day
 
-	print("\nMy program took %.2f seconds to run\n" %(time.time() - start_time))
+	#print("\nMy program took %.2f seconds to run\n" %(time.time() - start_time))
 	input("Press ENTER to continue.")
 
 main()
